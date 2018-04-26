@@ -2,7 +2,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /** 
- * CSEE 2920: Mariam Hammady & Brandon Ramcharran
+ *
  * 
  * We used code originally created by ivanliljeqvist on 2017-08-31.
  */
