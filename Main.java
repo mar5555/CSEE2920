@@ -12,20 +12,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] genesisTransactions = {"a satoshi sent ivan 999900 bitcoin","hal finney sent 10 bitcoins to ivan"};
+        //recording number of data sets saved into folder "TEST"
+        
+        
+        
+        String[] genesisTransactions = {"First Data Set is saved to specified folder TEST"};
         
         //this block starts at zero therefore there is no previous address
         Block genesisBlock = new Block(0, genesisTransactions); 
 
-        String[] block2Transactions = {"ivan sent 10 bitcoin to satoshi", "satoshi sent 10 bitcoin to starbuck"};
+        String[] block2Transactions = {"Last Data Set saved into folder TEST"};
         //this block uses the previous hash
         Block block2 = new Block(genesisBlock.getBlockHash(), block2Transactions);
 
-        String[] block3Transactions = {"ivan sent 999 bitcoin to my mom"};
+        String[] block3Transactions = {"New Data Set saved into folder TEST"};
         Block block3 = new Block(block2.getBlockHash(), block3Transactions);
 
         
-        //testing by printing out current hash of each block
         System.out.println("Hash of genesis block:");
         System.out.println(genesisBlock.getBlockHash());
 
